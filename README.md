@@ -187,3 +187,10 @@ The README screenshots are stored in [`notebooks/assets`](notebooks/assets):
 | [`03-triage-with-gemma4.png`](notebooks/assets/03-triage-with-gemma4.png) | Gemma 4 triage action |
 | [`03a-review-analysis.png`](notebooks/assets/03a-review-analysis.png) | AI analysis review |
 | [`04-review-draft-report.png`](notebooks/assets/04-review-draft-report.png) | Final draft report review |
+
+## License
+
+Unless a file states otherwise, the Gemma4Good Kaggle submission materials in
+this repository are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0). Third-party tools, models, runtimes, and
+datasets remain governed by their own licenses and terms.
