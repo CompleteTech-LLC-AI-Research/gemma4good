@@ -1,5 +1,9 @@
 # Clean Drop
 
+<p align="center">
+  <img src="notebooks/assets/clean-drop-project-icon.png" alt="Clean Drop Droppy project icon" width="180">
+</p>
+
 Clean Drop is a standalone, edge-AI-driven ecosystem designed to ensure reliable access to safe water through real-time monitoring, community-driven reporting, and automated triage. It uses Gemma 4 for offline multimodal analysis and CKAN for centralized data archiving, transforming field images into actionable infrastructure claims.
 
 The platform focuses on high-visibility indicators, specifically Orange Jugs as the primary field icon and Consumer Layer kits such as Cup + Lid, to map water stress across urban, rural, and IDP contexts. The result is a scalable, low-bandwidth friendly system that bridges community needs and official response.
@@ -180,6 +184,7 @@ The README screenshots are stored in [`notebooks/assets`](notebooks/assets):
 
 | Asset | Purpose |
 | --- | --- |
+| [`clean-drop-project-icon.png`](notebooks/assets/clean-drop-project-icon.png) | Droppy project icon cropped from the sprite sheet |
 | [`00-overview.png`](notebooks/assets/00-overview.png) | Project overview and application framing |
 | [`01-capture-image.png`](notebooks/assets/01-capture-image.png) | Field image capture screen |
 | [`01a-captured-image.jpg`](notebooks/assets/01a-captured-image.jpg) | Example captured field image |
