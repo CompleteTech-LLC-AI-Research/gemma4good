@@ -4,7 +4,9 @@ Clean Drop is a standalone, edge-AI-driven ecosystem designed to ensure reliable
 
 The platform focuses on high-visibility indicators, specifically Orange Jugs as the primary field icon and Consumer Layer kits such as Cup + Lid, to map water stress across urban, rural, and IDP contexts. The result is a scalable, low-bandwidth friendly system that bridges community needs and official response.
 
-![Clean Drop overview](notebooks/assets/00-overview.png)
+<p align="center">
+  <img src="notebooks/assets/00-overview.png" alt="Clean Drop overview">
+</p>
 
 ## Mission Goal
 
@@ -18,7 +20,9 @@ Remote Somali regions suffer from critical water point outages, quality issues, 
 
 The Clean Drop mobile application is the primary touchpoint for community members. It is designed for simplicity and immediate action, with a visual-first workflow that guides users from image capture to reviewed report submission.
 
-![Capture image workflow](notebooks/assets/01-capture-image.png)
+<p align="center">
+  <img src="notebooks/assets/01-capture-image.png" alt="Capture image workflow">
+</p>
 
 ### Droppy: The AI-Enabled Helper
 
@@ -33,13 +37,17 @@ When a user captures a photo of a water point or infrastructure issue, the local
 - **Infrastructure:** Broken pipes, damaged pumps, leaking valves, or related failures.
 - **Health Risk:** Environmental risks or outbreak-linked water source concerns.
 
-![Captured field image](notebooks/assets/01a-captured-image.jpg)
+<p align="center">
+  <img src="notebooks/assets/01a-captured-image.jpg" alt="Captured field image">
+</p>
 
 ### Geolocation and Temporal Tracking
 
 Every submission is enriched with location and time information. This anchors each claim in space and time, allowing Mission Control to generate heatmaps, detect clusters, and track how water stress evolves across regions.
 
-![Set time and location](notebooks/assets/02-set-time-location.png)
+<p align="center">
+  <img src="notebooks/assets/02-set-time-location.png" alt="Set time and location">
+</p>
 
 ### Community Building and Activities
 
@@ -57,7 +65,9 @@ Clean Drop prioritizes visual evidence so users with limited literacy or low con
 6. A human reviews the draft and submits the report.
 7. Reports queue locally and synchronize with the CKAN archive when connectivity permits.
 
-![Triage with Gemma 4](notebooks/assets/03-triage-with-gemma4.png)
+<p align="center">
+  <img src="notebooks/assets/03-triage-with-gemma4.png" alt="Triage with Gemma 4">
+</p>
 
 This turns fragile field observations into prioritized, actionable signals for response teams while preserving a closed loop from evidence to verification to dispatch.
 
@@ -81,7 +91,9 @@ This local-first design reduces dependence on distant services, keeps raw model 
 
 Gemma 4 returns strict structured output with fields such as `summary`, `severity`, `category`, `categories`, `observedIssues`, `recommendedActions`, `needsEscalation`, and `confidence`.
 
-![Review Gemma 4 analysis](notebooks/assets/03a-review-analysis.png)
+<p align="center">
+  <img src="notebooks/assets/03a-review-analysis.png" alt="Review Gemma 4 analysis">
+</p>
 
 ### Privacy, Compression, and Stale Result Prevention
 
@@ -97,7 +109,9 @@ Structured reports, issue tags, images, timestamps, and geolocation data synchro
 
 Mission Control aggregates reviewed reports and approved demo records into map points, severity distributions, category detections, and operational alerts.
 
-![Review draft report](notebooks/assets/04-review-draft-report.png)
+<p align="center">
+  <img src="notebooks/assets/04-review-draft-report.png" alt="Review draft report">
+</p>
 
 ## Gemma 4 Fine-Tuning for Object Detection
 
