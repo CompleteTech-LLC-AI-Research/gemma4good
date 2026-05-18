@@ -1,4 +1,4 @@
-# Clean Drop: Gemma4Good
+# Clean Drop
 
 Clean Drop is a standalone, edge-AI-driven ecosystem designed to ensure reliable access to safe water through real-time monitoring, community-driven reporting, and automated triage. It uses Gemma 4 for offline multimodal analysis and CKAN for centralized data archiving, transforming field images into actionable infrastructure claims.
 
