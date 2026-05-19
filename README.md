@@ -79,6 +79,16 @@ This turns fragile field observations into prioritized, actionable signals for r
 
 The system is optimized for dark-mode-only operations in environments with intermittent power and data.
 
+## Kaggle Submission Notebook
+
+The repository includes a self-contained Kaggle evidence notebook at
+[`submission-notebook/gemma4good_field_report_kaggle.ipynb`](submission-notebook/gemma4good_field_report_kaggle.ipynb).
+It recreates the Clean Drop field-report workflow without requiring access to
+the live website, private API, camera, GPS hardware, or separately hosted model
+service. The notebook supports uploaded or Kaggle-mounted images, attempts local
+model-backed analysis when model files are available, and falls back to a
+transparent deterministic triage path so the workflow can still run end to end.
+
 ### Offline-First Capture and Local Processing
 
 Clean Drop runs Gemma 4 locally through `llama.cpp` on edge infrastructure. The current deployment uses the `ggml-org/gemma-4-26b-a4b-it-GGUF:Q4_K_M` multimodal model behind a private `llama.cpp` Vulkan runtime.
@@ -192,6 +202,9 @@ The README screenshots are stored in [`notebooks/assets`](notebooks/assets):
 | [`03-triage-with-gemma4.png`](notebooks/assets/03-triage-with-gemma4.png) | Gemma 4 triage action |
 | [`03a-review-analysis.png`](notebooks/assets/03a-review-analysis.png) | AI analysis review |
 | [`04-review-draft-report.png`](notebooks/assets/04-review-draft-report.png) | Final draft report review |
+
+The standalone Kaggle notebook is stored in
+[`submission-notebook/gemma4good_field_report_kaggle.ipynb`](submission-notebook/gemma4good_field_report_kaggle.ipynb).
 
 ## License
 
