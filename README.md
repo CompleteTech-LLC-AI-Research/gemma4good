@@ -8,6 +8,17 @@ Clean Drop is a standalone, edge-AI-driven ecosystem designed to ensure reliable
 
 The platform focuses on high-visibility indicators, specifically Orange Jugs as the primary field icon and Consumer Layer kits such as Cup + Lid, to map water stress across urban, rural, and IDP contexts. The result is a scalable, low-bandwidth friendly system that bridges community needs and official response.
 
+## Demo Video
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=heiG8zpZ6pY">
+    <img src="https://img.youtube.com/vi/heiG8zpZ6pY/hqdefault.jpg" alt="Clean Drop demo video" width="640">
+  </a>
+</p>
+
+Watch the Clean Drop demo on YouTube:
+[`https://www.youtube.com/watch?v=heiG8zpZ6pY`](https://www.youtube.com/watch?v=heiG8zpZ6pY).
+
 <p align="center">
   <img src="notebooks/assets/00-overview.png" alt="Clean Drop overview">
 </p>
