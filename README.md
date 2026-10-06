@@ -8,13 +8,11 @@ Clean Drop is a standalone, edge-AI-driven ecosystem designed to ensure reliable
 
 The platform focuses on high-visibility indicators, specifically Orange Jugs as the primary field icon and Consumer Layer kits such as Cup + Lid, to map water stress across urban, rural, and IDP contexts. The result is a scalable, low-bandwidth friendly system that bridges community needs and official response.
 
-## Demo Video
+**Status:** Kaggle submission for the Gemma 4 Good hackathon. This repository holds the write-up, screenshots and a runnable evidence notebook; the mobile app and Field Report API source are not in it. Descriptions of the app below are the project's design and demo, not code you can run from here.
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=heiG8zpZ6pY">
-    <img src="https://img.youtube.com/vi/heiG8zpZ6pY/hqdefault.jpg" alt="Clean Drop demo video" width="640">
-  </a>
-</p>
+**Try it:** open [`submission-notebook/gemma4good_field_report_kaggle.ipynb`](submission-notebook/gemma4good_field_report_kaggle.ipynb) in Kaggle or Jupyter and run the cells in order (details in [Try it: Kaggle notebook](#try-it-kaggle-notebook)). Or watch the [demo video](#demo-video).
+
+## Demo Video
 
 Watch the Clean Drop demo on YouTube:
 [`https://www.youtube.com/watch?v=heiG8zpZ6pY`](https://www.youtube.com/watch?v=heiG8zpZ6pY).
@@ -86,11 +84,7 @@ Clean Drop prioritizes visual evidence so users with limited literacy or low con
 
 This turns fragile field observations into prioritized, actionable signals for response teams while preserving a closed loop from evidence to verification to dispatch.
 
-## Technical Architecture: Edge to CKAN
-
-The system is optimized for dark-mode-only operations in environments with intermittent power and data.
-
-## Kaggle Submission Notebook
+## Try it: Kaggle notebook
 
 The repository includes a self-contained Kaggle evidence notebook at
 [`submission-notebook/gemma4good_field_report_kaggle.ipynb`](submission-notebook/gemma4good_field_report_kaggle.ipynb).
@@ -99,6 +93,10 @@ the live website, private API, camera, GPS hardware, or separately hosted model
 service. The notebook supports uploaded or Kaggle-mounted images, attempts local
 model-backed analysis when model files are available, and falls back to a
 transparent deterministic triage path so the workflow can still run end to end.
+
+## Technical Architecture: Edge to CKAN
+
+The system is optimized for dark-mode-only operations in environments with intermittent power and data.
 
 ### Offline-First Capture and Local Processing
 
