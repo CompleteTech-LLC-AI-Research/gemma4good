@@ -8,14 +8,18 @@ Clean Drop is a standalone, edge-AI-driven ecosystem designed to ensure reliable
 
 The platform focuses on high-visibility indicators, specifically Orange Jugs as the primary field icon and Consumer Layer kits such as Cup + Lid, to map water stress across urban, rural, and IDP contexts. The result is a scalable, low-bandwidth friendly system that bridges community needs and official response.
 
-**Status:** Kaggle submission for the Gemma 4 Good hackathon. This repository holds the write-up, screenshots and a runnable evidence notebook; the mobile app and Field Report API source are not in it. Descriptions of the app below are the project's design and demo, not code you can run from here.
+**Status:** Built by Team Clean Drop for the Gemma 4 Good hackathon on Kaggle. The entry reached the submission form at the deadline on 2026-05-18 and the form did not accept it. This repository holds the write-up, screenshots and a runnable evidence notebook; the mobile app and Field Report API source are not in it. Descriptions of the app below are the project's design and demo, not code you can run from here.
 
 **Try it:** open [`submission-notebook/gemma4good_field_report_kaggle.ipynb`](submission-notebook/gemma4good_field_report_kaggle.ipynb) in Kaggle or Jupyter and run the cells in order (details in [Try it: Kaggle notebook](#try-it-kaggle-notebook)). Or watch the [demo video](#demo-video).
 
 ## Demo Video
 
 Watch the Clean Drop demo on YouTube:
-[`https://www.youtube.com/watch?v=heiG8zpZ6pY`](https://www.youtube.com/watch?v=heiG8zpZ6pY).
+[`https://www.youtube.com/watch?v=heiG8zpZ6pY`](https://www.youtube.com/watch?v=heiG8zpZ6pY) (posted by frymatic on the Brazen Studios channel).
+
+## Team
+
+Team Clean Drop: frymatic ([Twitch: mofrymatic](https://www.twitch.tv/mofrymatic)), 1Soph, GalaxyRuler, GODFATHER and CompleteTech LLC (Timothy Gregg).
 
 <p align="center">
   <img src="notebooks/assets/00-overview.png" alt="Clean Drop overview">
@@ -51,7 +55,7 @@ When a user captures a photo of a water point or infrastructure issue, the local
 - **Health Risk:** Environmental risks or outbreak-linked water source concerns.
 
 <p align="center">
-  <img src="notebooks/assets/01a-captured-image.jpg" alt="Captured field image">
+  <img src="notebooks/assets/01a-captured-image.jpg" alt="AI-generated example of turbid water in a yellow jerrycan, used as a demo field image">
 </p>
 
 ### Geolocation and Temporal Tracking
@@ -100,7 +104,7 @@ The system is optimized for dark-mode-only operations in environments with inter
 
 ### Offline-First Capture and Local Processing
 
-Clean Drop runs Gemma 4 locally through `llama.cpp` on edge infrastructure. The current deployment uses the `ggml-org/gemma-4-26b-a4b-it-GGUF:Q4_K_M` multimodal model behind a private `llama.cpp` Vulkan runtime.
+Clean Drop runs Gemma 4 locally through `llama.cpp` on edge infrastructure. The demo configuration uses the `ggml-org/gemma-4-26b-a4b-it-GGUF:Q4_K_M` multimodal model behind a private `llama.cpp` Vulkan runtime.
 
 The mobile application does not call the raw model endpoint directly. It calls a narrow, same-origin Field Report API that:
 
@@ -152,7 +156,7 @@ The fine-tuning dataset should include Somali-context water point images annotat
 - Cup + Lid kit
 - Water point damage
 
-Captions should describe scene context and associated water issues. For repeatable demos and evaluation, the project includes a 300-record Somalia field-report image dataset with paired images and JSON sidecars covering water-related categories across realistic locations.
+Captions should describe scene context and associated water issues. For repeatable demos and evaluation, the project describes a 300-record Somalia field-report image dataset (not included in this repository) with paired images and JSON sidecars covering water-related categories across realistic locations.
 
 ### Deployment
 
@@ -206,7 +210,7 @@ The README screenshots are stored in [`notebooks/assets`](notebooks/assets):
 | [`clean-drop-project-icon.png`](notebooks/assets/clean-drop-project-icon.png) | Droppy project icon cropped from the sprite sheet |
 | [`00-overview.png`](notebooks/assets/00-overview.png) | Project overview and application framing |
 | [`01-capture-image.png`](notebooks/assets/01-capture-image.png) | Field image capture screen |
-| [`01a-captured-image.jpg`](notebooks/assets/01a-captured-image.jpg) | Example captured field image |
+| [`01a-captured-image.jpg`](notebooks/assets/01a-captured-image.jpg) | Example field image, AI-generated for the demo (not a real field photo) |
 | [`02-set-time-location.png`](notebooks/assets/02-set-time-location.png) | Time and location confirmation |
 | [`03-triage-with-gemma4.png`](notebooks/assets/03-triage-with-gemma4.png) | Gemma 4 triage action |
 | [`03a-review-analysis.png`](notebooks/assets/03a-review-analysis.png) | AI analysis review |
@@ -217,7 +221,7 @@ The standalone Kaggle notebook is stored in
 
 ## License
 
-Unless a file states otherwise, the Gemma4Good Kaggle submission materials in
+Unless a file states otherwise, the Clean Drop hackathon materials in
 this repository are licensed under the Creative Commons Attribution 4.0
 International License (CC BY 4.0). Third-party tools, models, runtimes, and
 datasets remain governed by their own licenses and terms.
